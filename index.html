@@ -1,144 +1,86 @@
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>International Experience — Rebecca Ndouga</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#f7fbff;
-      --accent:#0b6cf6;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --max-width:1000px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial; background:var(--bg); color:#0f1724}
-    .poster{max-width:var(--max-width);margin:24px auto;padding:28px;display:grid;grid-template-columns:1fr 380px;gap:24px}
-    .left{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));padding:28px;border-radius:12px;box-shadow:0 6px 24px rgba(8,15,46,0.06)}
-    .right{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(11,108,246,0.06)}
-    header{display:flex;align-items:center;gap:16px}
-    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:22px}
-    h1{margin:0;font-size:30px}
-    h2{margin:8px 0 16px;font-size:16px;color:var(--muted)}
-    section{margin-bottom:18px}
-    .section-title{font-weight:600;margin-bottom:8px;color:var(--accent)}
-    p{margin:6px 0;color:#0f1724;line-height:1.45}
-    .bullets{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:8px}
-    .bullet{background:#f8fafc;padding:10px;border-radius:8px;border:1px solid rgba(8,15,46,0.03)}
-    .small{font-size:13px;color:var(--muted)}
-    .map{height:120px;background:linear-gradient(90deg,#eef2ff,#fff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px dashed rgba(11,108,246,0.08)}
-    .travel{display:flex;gap:8px;flex-wrap:wrap}
-    .chip{padding:6px 10px;border-radius:999px;background:#fff;border:1px solid rgba(15,23,36,0.06);font-size:13px}
-    footer{margin-top:18px;font-size:13px;color:var(--muted)}
-    .print-btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
-    /* Responsive */
-    @media (max-width:900px){.poster{grid-template-columns:1fr; padding:16px}.right{order:2}.left{order:1}}
-    /* Print friendly for A3 / A4 landscape */
-    @media print{
-      body{background:white}
-      .poster{box-shadow:none;margin:0;padding:0;max-width:100%;grid-template-columns:1fr 380px}
-      .print-hide{display:none}
-    }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style>
+html {
+    font-family: Open Sans,sans-serif;
+}
+/* Conteneur principal du header */
+.header-isen {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Organisation interne */
+.header-container {
+  max-width: 1400px; /* un peu plus large pour aérer */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo img {
+  height: 45px; /* logo moins haut */
+  width: auto;
+}
+
+/* Navigation */
+.header-nav {
+  background: #e30613; /* Rouge ISEN */
+  flex: 1; /* occupe toute la largeur dispo */
+  margin-left: 40px; /* espace entre logo et barre rouge */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* liens espacés sur toute la largeur */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  flex: 1; /* chaque lien occupe une largeur égale */
+  text-align: center;
+}
+
+.header-nav a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+    </style>
 </head>
 <body>
-  <div class="poster">
-    <div class="left">
-      <header>
-        <div class="avatar">RN</div>
-        <div>
-          <h1>My International Experience — Gabon → France</h1>
-          <h2>Rebecca Ndouga • ISEN Yncréa Ouest, Brest</h2>
-        </div>
-      </header>
+<header class="header-isen">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
 
-      <section>
-        <div class="section-title">Why France?</div>
-        <p class="small">I chose France mainly because of the language — French is widely spoken in Gabon — and because I have family here. My uncle lives in Brittany, which made the move less intimidating.</p>
-      </section>
-
-      <section>
-        <div class="section-title">Why Brest?</div>
-        <p class="small">I wanted to stay close to my uncle in Brittany. I applied to schools in the region and was accepted at <strong>ISEN Brest</strong>, a recognized engineering school.</p>
-      </section>
-
-      <section>
-        <div class="section-title">What surprised me</div>
-        <div class="bullets">
-          <div class="bullet"><strong>Weather</strong><div class="small">Big seasonal changes — winter is much colder than what I'm used to in Gabon.</div></div>
-          <div class="bullet"><strong>Food</strong><div class="small">Different products and flavors; it took time to adapt.</div></div>
-          <div class="bullet"><strong>People</strong><div class="small">More reserved social behavior compared to Gabon — initially surprising.</div></div>
-          <div class="bullet"><strong>Distance</strong><div class="small">Being far from family is emotionally difficult, even with relatives and new friends around.</div></div>
-        </div>
-      </section>
-
-      <section>
-        <div class="section-title">Highlights & Travels</div>
-        <p class="small">I love the landscapes and architecture here. Brest offers beaches and many activities. I travelled to several French cities — notably <strong>Bordeaux</strong>, where I completed my M1 internship. The experience was very positive: friendly people and a beautiful city.</p>
-      </section>
-
-      <section>
-        <div class="section-title">Personal takeaways</div>
-        <p class="small">This experience helped me grow, discover a new culture, and gain independence. It also encouraged me to explore more countries in the future.</p>
-      </section>
-
-      <footer>
-        <div class="small">Adapted for Erasmus Day — 16/10</div>
-        <a class="print-btn print-hide" href="#" onclick="window.print();return false;">Print / Save as PDF</a>
-      </footer>
-    </div>
-
-    <aside class="right">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-        <div>
-          <div style="font-weight:700">Quick facts</div>
-          <div class="small">Nationality: Gabon • Language: French • School: ISEN Brest</div>
-        </div>
-        <div style="text-align:right">
-          <div style="font-size:22px;font-weight:700;color:var(--accent)">Brest</div>
-          <div class="small">Brittany, France</div>
-        </div>
-      </div>
-
-      <div class="map" title="Map placeholder">Map / Route: Gabon → Brest</div>
-
-      <section style="margin-top:14px">
-        <div class="section-title">Cross-cultural notes</div>
-        <p class="small">What surprised me: the cold seasons, different food habits, and a more reserved social culture. What I liked: scenic coasts, safe city life, and new friendships.</p>
-      </section>
-
-      <section style="margin-top:8px">
-        <div class="section-title">Activities & skills gained</div>
-        <p class="small">• Adaptability • Independence • Intercultural communication • Internship experience in Bordeaux.</p>
-      </section>
-
-      <section style="margin-top:8px">
-        <div class="section-title">Visited cities</div>
-        <div class="travel">
-          <div class="chip">Bordeaux</div>
-          <div class="chip">Rennes</div>
-          <div class="chip">Nantes</div>
-          <div class="chip">Paris</div>
-        </div>
-      </section>
-
-      <section style="margin-top:8px">
-        <div class="section-title">Contact</div>
-        <p class="small">Rebecca Ndouga — ISEN Yncréa Ouest, Brest<br>Email: rebeccandouga@gmail.com</p>
-      </section>
-
-    </aside>
+    <!-- Navbar -->
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Liens à venir</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <script>
-    // Small improvement: allow keyboard shortcut Ctrl+P to trigger print button on small screens
-    document.addEventListener('keydown', function(e){
-      if((e.ctrlKey||e.metaKey) && e.key === 'p'){
-        // let browser handle print
-      }
-    });
-  </script>
+
 </body>
 </html>
