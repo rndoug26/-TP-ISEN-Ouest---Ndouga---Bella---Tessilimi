@@ -167,11 +167,156 @@ position: absolute;
 </body>
 </html>
 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style>
+    html {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff;
+    }
 
+    /* SECTION GLOBALE */
+    .block-devenir {
+      background: #fff;
+      padding: 60px 20px;
+    }
 
+    .block-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
+    .block-title {
+      font-size: 38px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 50px;
+      text-align: left;
+    }
 
+    /* CONTENEUR DES DEUX CARTES */
+    .block-columns-img {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
+    /* STYLE DES CARTES */
+    .block-card {
+      background: #fff;
+      border: 1px solid #e1001a;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 360px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .block-card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* IMAGE EN HAUT */
+    .block-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CONTENU TEXTE */
+    .block-card .block-text {
+      padding: 22px;
+      text-align: left;
+    }
+
+    .block-card .block-text h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .block-card .block-text p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    /* BOUTON ROUGE */
+    .btn-red {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 22px;
+      background: #e1001a;
+      color: #fff;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background 0.3s;
+    }
+
+    .btn-red:hover {
+      background: #b30014;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 800px) {
+      .block-columns-img {
+        flex-direction: column;
+        align-items: center;
+      }
+      .block-card {
+        width: 90%;
+      }
+      .block-title {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="block-devenir">
+    <div class="block-container">
+      <h1 class="block-title"></h1>
+
+      <div class="block-columns-img">
+        
+        <!-- Carte 1 : Formations post-bac -->
+        <div class="block-card">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac">
+          <div class="block-text">
+            <h3>Formations post-bac</h3>
+            <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+            <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+            <a href="#" class="btn-red">Découvrez nos 7 cycles post-bac</a>
+          </div>
+        </div>
+
+        <!-- Carte 2 : Ingénieur par alternance -->
+        <div class="block-card">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Formation ingénieur alternance">
+          <div class="block-text">
+            <h3>Devenir ingénieur par alternance</h3>
+            <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence.</p>
+            <p>Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+            <a href="#" class="btn-red">Formation d’ingénieurs sous statut apprenti</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
 
 <html>
 <head>
