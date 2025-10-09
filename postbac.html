@@ -4,17 +4,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ISEN Ouest - Postbac</title>
     <style>
-html {
-    font-family: Open Sans, sans-serif;
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Open Sans, sans-serif;
 }
 
-/* Conteneur principal du header */
+/* === HEADER === */
 .header-isen {
   background: #fff;
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* Organisation interne */
 .header-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -24,13 +27,11 @@ html {
   justify-content: space-between;
 }
 
-/* Logo */
 .header-logo img {
   height: 45px;
   width: auto;
 }
 
-/* Navigation */
 .header-nav {
   background: #e30613;
   flex: 1;
@@ -56,15 +57,69 @@ html {
   font-size: 1.2em;
   font-weight: bold;
   color: #fff;
-  transition: background 0.2s;
   text-decoration: none;
+  transition: background 0.2s;
 }
 
 .header-nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
+/* === SECTION CONTENU === */
+main {
+  flex: 1; /* pousse le footer vers le bas */
+}
+
+.block-devenir {
+  background: #fff;
+  padding: 60px 20px;
+}
+
+.block-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.block-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.block-columns-img {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.block-text {
+  flex: 1;
+  padding-left: 5%;
+}
+
+.block-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 18px;
+}
+
+.block-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.block-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* === FOOTER === */
 .site-footer {
   background: #000;
   color: #fff;
@@ -72,7 +127,6 @@ html {
   font-family: Arial, sans-serif;
 }
 
-/* Conteneur principal */
 .footer-container {
   display: flex;
   max-width: 1200px;
@@ -81,12 +135,12 @@ html {
   flex-wrap: wrap;
 }
 
-/* Colonne 1 : logo + bouton */
 .footer-col-logo {
   flex: 1;
   min-width: 220px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer-logo {
@@ -103,14 +157,12 @@ html {
   font-weight: 600;
   text-decoration: none;
   border-radius: 25px;
-  margin: auto;
 }
 
 .btn-contact:hover {
   background: #a00b23;
 }
 
-/* Zone liens (colonnes 2-4) */
 .footer-links-section {
   flex: 3;
   display: flex;
@@ -124,7 +176,6 @@ html {
   margin-bottom: 20px;
 }
 
-/* Colonnes de liens */
 .footer-links-container {
   display: flex;
   gap: 40px;
@@ -161,7 +212,6 @@ html {
   text-decoration: underline;
 }
 
-/* Bas de page */
 .footer-bottom {
   text-align: center;
   padding-top: 15px;
@@ -171,8 +221,11 @@ html {
   font-size: 14px;
 }
 
-/* Responsive */
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
+  .block-columns-img {
+    flex-direction: column;
+  }
   .footer-container {
     flex-direction: column;
     gap: 20px;
@@ -182,7 +235,6 @@ html {
     gap: 20px;
   }
   .footer-cities {
-    text-align: left;
     font-size: 18px;
   }
 }
@@ -193,12 +245,10 @@ html {
 <!-- HEADER -->
 <header class="header-isen">
   <div class="header-container">
-    <!-- Logo -->
     <a href="/" class="header-logo">
       <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
     </a>
 
-    <!-- Navbar -->
     <nav class="header-nav">
       <ul>
         <li><a href="#">Liens à venir</a></li>
@@ -207,18 +257,37 @@ html {
   </div>
 </header>
 
+<!-- CONTENU PRINCIPAL -->
+<main>
+  <section class="block-devenir">
+    <div class="block-container">
+      <h1 class="block-title">Titre</h1>
+      <div class="block-columns-img">
+        <div class="block-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque congue nibh et sollicitudin porttitor. Vivamus facilisis elit non leo luctus efficitur. Duis sed molestie tellus, sed porttitor elit. Phasellus hendrerit vel dolor sit amet vestibulum. Proin eu molestie magna. Fusce eu nibh euismod, ornare nunc ut, lacinia orci. Morbi interdum lacus in interdum dignissim. Integer id purus lectus. Fusce quis molestie enim. Pellentesque iaculis ligula lacinia elit volutpat, ac ornare est dignissim. Curabitur leo ex, lacinia imperdiet augue eget, pellentesque egestas mi.
+          </p>
+          <p>
+            Maecenas eget sapien consequat, mattis dolor non, laoreet erat. Suspendisse lacinia sed mauris eu feugiat. Quisque vitae ultricies mauris. Nulla in nisl non massa mattis facilisis ut in felis. Donec fringilla vulputate lacus a mollis. Vivamus mattis eros et augue molestie egestas. Duis et elit ac diam semper varius vitae in elit.
+          </p>
+        </div>
+        <div class="block-image">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="Image ISEN">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
 <!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-container">
-
-    <!-- Colonne 1 : Logo + bouton -->
     <div class="footer-col footer-col-logo">
       <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
            alt="ISEN Ouest" class="footer-logo">
       <a href="ACOMPLETER" class="btn-contact">Nous contacter</a>
     </div>
 
-    <!-- Zone titres + colonnes 2-4 -->
     <div class="footer-links-section">
       <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
 
@@ -226,9 +295,9 @@ html {
         <div class="footer-col">
           <h3>Devenir ingénieur</h3>
           <ul>
-            <li><a href="ACOMPLETER">Cycle post-bac</a></li>
-            <li><a href="ACOMPLETER">Formation d'ingénieur</a></li>
-            <li><a href="ACOMPLETER">Apprentissage</a></li>
+            <li><a href="#">Cycle post-bac</a></li>
+            <li><a href="#">Formation d'ingénieur</a></li>
+            <li><a href="#">Apprentissage</a></li>
           </ul>
         </div>
 
