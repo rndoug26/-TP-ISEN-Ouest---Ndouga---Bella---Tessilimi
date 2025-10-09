@@ -2,11 +2,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>ISEN Ouest - Postbac</title>
     <style>
 html {
-    font-family: Open Sans,sans-serif;
+    font-family: Open Sans, sans-serif;
 }
+
 /* Conteneur principal du header */
 .header-isen {
   background: #fff;
@@ -15,7 +16,7 @@ html {
 
 /* Organisation interne */
 .header-container {
-  max-width: 1400px; /* un peu plus large pour aérer */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
@@ -25,27 +26,27 @@ html {
 
 /* Logo */
 .header-logo img {
-  height: 45px; /* logo moins haut */
+  height: 45px;
   width: auto;
 }
 
 /* Navigation */
 .header-nav {
-  background: #e30613; /* Rouge ISEN */
-  flex: 1; /* occupe toute la largeur dispo */
-  margin-left: 40px; /* espace entre logo et barre rouge */
+  background: #e30613;
+  flex: 1;
+  margin-left: 40px;
 }
 
 .header-nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around; /* liens espacés sur toute la largeur */
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
 
 .header-nav li {
-  flex: 1; /* chaque lien occupe une largeur égale */
+  flex: 1;
   text-align: center;
 }
 
@@ -62,9 +63,134 @@ html {
 .header-nav a:hover {
   text-decoration: underline;
 }
+
+/* Footer */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Conteneur principal */
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Colonne 1 : logo + bouton */
+.footer-col-logo {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  height: 100px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.btn-contact {
+  display: block;
+  padding: 10px 20px;
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.btn-contact:hover {
+  background: #a00b23;
+}
+
+/* Zone liens (colonnes 2-4) */
+.footer-links-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-cities {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Colonnes de liens */
+.footer-links-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Bas de page */
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-links-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-cities {
+    text-align: left;
+    font-size: 18px;
+  }
+}
     </style>
 </head>
 <body>
+
+<!-- HEADER -->
 <header class="header-isen">
   <div class="header-container">
     <!-- Logo -->
@@ -81,6 +207,56 @@ html {
   </div>
 </header>
 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Colonne 1 : Logo + bouton -->
+    <div class="footer-col footer-col-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+           alt="ISEN Ouest" class="footer-logo">
+      <a href="ACOMPLETER" class="btn-contact">Nous contacter</a>
+    </div>
+
+    <!-- Zone titres + colonnes 2-4 -->
+    <div class="footer-links-section">
+      <p class="footer-cities">Brest - Caen - Nantes - Paris - Rennes</p>
+
+      <div class="footer-links-container">
+        <div class="footer-col">
+          <h3>Devenir ingénieur</h3>
+          <ul>
+            <li><a href="ACOMPLETER">Cycle post-bac</a></li>
+            <li><a href="ACOMPLETER">Formation d'ingénieur</a></li>
+            <li><a href="ACOMPLETER">Apprentissage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Entreprises</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/entreprises/recruter/">Recruter un étudiant</a></li>
+            <li><a href="https://isen-ouest.fr/labisen-la-recherche/la-recherche-partenariale/">Recherche partenariale</a></li>
+            <li><a href="http://isen-ouest.fr/taxe-d-apprentissage">Taxe d'apprentissage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Étudiants</h3>
+          <ul>
+            <li><a href="https://isen-ouest.fr/infos-pratiques/">Informations pratiques</a></li>
+            <li><a href="http://isen-ouest.fr/sportifs">Sportifs</a></li>
+            <li><a href="http://isen-ouest.fr/alumni-aiisen">Alumni AIISEN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  &copy; 2025 ISEN Ouest – Tous droits réservés.
+</div>
 
 </body>
 </html>
